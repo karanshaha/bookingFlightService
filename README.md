@@ -21,8 +21,8 @@ API-only application that would aggregate and return list of returning flights f
 # Swagger-url
 ```
 - Integrated swagger in order to get all API details like
-  - Parameters are needed in request.
-  - Default values if blank values are passed.
+  - Parameters that are needed in request.
+  - Default values in case blank values are passed.
   - Response payload and user friendly messages.
 
 http://localhost:8080/swagger-ui.html
