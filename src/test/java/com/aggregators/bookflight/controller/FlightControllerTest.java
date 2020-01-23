@@ -173,7 +173,7 @@ class FlightControllerTest {
       .accept(MediaType.APPLICATION_JSON_VALUE)).andReturn();
 
     assertEquals(200, mvcResult.getResponse().getStatus());
-    assertEquals("[]", mvcResult.getResponse().getContentAsString());
+    assertEquals("Operation Supports only Business / Cheap /All as input .", mvcResult.getResponse().getContentAsString());
 
   }
 

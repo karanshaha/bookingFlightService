@@ -65,7 +65,7 @@ public class FlightController {
       flightDetails = flightService.getAllBusinessFlights();
       allCheapFlights = flightService.getAllCheapFlights();
     } else {
-      return new ResponseEntity(flightDetails, HttpStatus.OK);
+      return new ResponseEntity("Operation Supports only Business / Cheap /All as input .", HttpStatus.OK);
     }
     flightDetails.addAll(allCheapFlights);
     SearchResult paginatedSearchResult = flightService.getPaginatedSearchResult(page, flightDetails, itemsPerPage);
