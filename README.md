@@ -27,9 +27,9 @@ API-only application that would aggregate and return list of returning flights f
 
 http://localhost:8080/swagger-ui.html
 ```
-# Acctuator
+# Actuator
 ```
-- Integrated acctuator in order to check different status for bookingService like healthcheck,Memory matrix etc.
+- Integrated actuator in order to check different status for bookingService like healthcheck,Memory matrix etc.
 http://localhost:8080/actuator/
 http://localhost:8080/actuator/health  - To check if service has started and running
 ```
