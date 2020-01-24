@@ -51,7 +51,7 @@ public class FlightController {
   @GetMapping("/aggregation")
   public @ResponseBody
   ResponseEntity<?> getAggregation(
-    @ApiParam(value = "To filter and get the flight by as per Business/Cheap/all") @RequestParam(name = "flightType") String flightType,
+    @ApiParam(value = "To filter and get the flight by as per Business/Cheap/all. If nothing is given by default will bring results for both") @RequestParam(name = "flightType",defaultValue = "all") String flightType,
     @ApiParam(value = "Page no that is currently displayed") @RequestParam(defaultValue = "1") Integer page,
     @ApiParam(value = "No of results per page") @RequestParam(defaultValue = "15") Integer itemsPerPage) throws IOException {
     List<FlightDetails> flightDetails = new ArrayList<>();
