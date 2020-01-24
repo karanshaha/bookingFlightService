@@ -42,3 +42,9 @@ Request url
 http://localhost:8080/api/aggregation?flightType=all&page=1&itemsPerPage=15
 
 ```
+# Testing Coverage
+```
+                                        class %     Method %     Line %
+com.aggregators.bookflight.controller   100%(1/1)   100%(1/1)    100%(14/14)
+com.aggregators.bookflight.service      100%(1/1)   100%(5/5)     85%(52/61)
+```
